@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/67c66657.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="night-toggle" onClick="switchMode()">  
+        <div id="moon" class="moon"></div>  
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="inner_box" id="card">
+                <div class="card_front">
+                    <h2>FEEDBACK</h2>
+                    <form action="">
+                        <input type="text" class="input_box" placeholder="Enter your Name" required>
+                        <input type="email" class="input_box" placeholder="Enter your E-Mail" required>
+                        <textarea rows="15" cols="75" class="input_box" placeholder="Enter your opinion here.."></textarea>
+                    </form>
+                    <button type="submit" class="submit_btn">Submit</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function switchMode() {  
+        let moon = document.getElementById ("moon");  
+            if(moon.className=="moon"){  
+                moon.className="sun";  
+                document.body.style.backgroundColor = "#141D26";  
+                document.body.style.color = "#fff";  
+            }  
+            else {  
+                moon.className ="moon";  
+                document.body.style.backgroundColor = "#fff";  
+                document.body.style.color = "#000";  
+            }  
+        }
+    </script>
+</body>
+</html>
